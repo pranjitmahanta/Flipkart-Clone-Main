@@ -1,40 +1,49 @@
 import React from "react";
 import "./Footer.css";
-import { FaFacebookF, FaTwitter, FaInstagram, FaYoutube } from "react-icons/fa";
+import { FaFacebook, FaTwitter, FaInstagram, FaCcVisa, FaCcMastercard, FaCcPaypal } from "react-icons/fa";
 
 const Footer = () => {
   return (
     <footer className="footer">
       <div className="footer-container">
         <div className="footer-section">
-          <h3>About Us</h3>
-          <p>Flipkart Clone is an e-commerce platform for all your needs.</p>
+          <h4>About Us</h4>
+          <p>We are an e-commerce platform providing the best shopping experience.</p>
         </div>
 
         <div className="footer-section">
-          <h3>Customer Care</h3>
+          <h4>Customer Care</h4>
           <ul>
-            <li>Help Center</li>
-            <li>Returns</li>
-            <li>Shipping</li>
+            <li><a href="#">Help Center</a></li>
+            <li><a href="#">Shipping</a></li>
+            <li><a href="#">Returns</a></li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h3>Policies</h3>
+          <h4>Policies</h4>
           <ul>
-            <li>Privacy Policy</li>
-            <li>Terms & Conditions</li>
+            <li><a href="#">Privacy Policy</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
           </ul>
         </div>
 
         <div className="footer-section">
-          <h3>Follow Us</h3>
+          <h4>Follow Us</h4>
           <div className="social-icons">
-            <FaFacebookF />
+            <FaFacebook />
             <FaTwitter />
             <FaInstagram />
-            <FaYoutube />
+          </div>
+        </div>
+
+        
+        <div className="footer-section">
+          <h4>Payment Methods</h4>
+          <div className="payment-icons">
+            <FaCcVisa />
+            <FaCcMastercard />
+            <FaCcPaypal />
           </div>
         </div>
       </div>
